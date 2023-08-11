@@ -1,52 +1,52 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const readMetxt = ({ title, description, installation, usage, contributing, tests, license, username, email }) => {
-//     `# ${title}
+const readMetxt = ({ title, description, installation, usage, contributing, tests, license, username, email }) => (
+    `# ${title}
 
-// ## Description
+## Description
 
-// ${description}
+${description}
 
-// ## Table of Contents
-
-
-// - [Installation](#installation)
-// - [Usage](#usage)
-// - [Credits](#credits)
-// - [License](#license)
-
-// ## Installation
-
-// ${installation}
+## Table of Contents
 
 
-// ## Usage
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-// ${usage}
+## Installation
 
-// ## Contributing
-
-// ${contributing}
-
-// ## Tests
+${installation}
 
 
-// ${tests}
+## Usage
 
-// ## License
+${usage}
 
-// ${license}
+## Contributing
 
-// ## Questions
+${contributing}
 
-// ${username}
+## Tests
 
-// ${email}
 
-// `
+${tests}
 
-`${title} ${description} ${installation} ${usage} ${contributing} ${tests} ${license} ${username} ${email}`;}
+## License
+
+${license}
+
+## Questions
+
+${username}
+
+${email}
+
+`)
 
 inquirer .prompt([
         {
@@ -107,10 +107,8 @@ inquirer .prompt([
     .then((response) => {
         const readmePageContent = readMetxt(response);
 
-        // fs.writeFile('README.md', readmePageContent, (err) =>
-        //   err ? console.log(err) : console.log('Successfully created README!'));
+        fs.writeFile('README.md', readmePageContent, (err) =>
+          err ? console.log(err) : console.log('Successfully created README!'));
         
-        console.log(response);
-        console.log(readMetxt(response));
-        console.log(readmePageContent);
+
     })
