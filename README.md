@@ -1,9 +1,9 @@
-# ReadME Generator
+# README Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 
-As a student in a coding bootcamp, I want to develop high quality professional readmes quickly and efficiently
+The motivation is to generate high quality and professional README files quickly, efficiently, and easily using the command line.
 
 ## Table of Contents
 
@@ -17,21 +17,21 @@ As a student in a coding bootcamp, I want to develop high quality professional r
 
 ## Installation
 
-install steps here
+Install npm to install the programs. Use the command line. 
 
 
 ## Usage
 
-Use the command line and npm install to get the program up and running
+Use the command line to answer the prompts to generate the README file
 
 ## Contributing
 
-none
+GitHup Repository
 
 ## Tests
 
 
-none
+None 
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -43,5 +43,5 @@ This project is covered under the MIT license.
 
 Find me on GitHub! My username is kevinatwood. Here is a link to my profile! [Github Profile](https://github.com/kevinatwood)
 
-If you would like to contact me with questiona, email me at [atwoodkevin22@gmail.com](atwoodkevin22@gmail.com)
+If you would like to contact me with questions, email me at atwoodkevin22@gmail.com.
 
