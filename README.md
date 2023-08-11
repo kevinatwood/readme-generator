@@ -1,25 +1,28 @@
-# Hello World
+# ReadME Generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 
-It Says hello
+As a student in a coding bootcamp, I want to develop high quality professional readmes quickly and efficiently
 
 ## Table of Contents
 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Contributing](#contributing)
+- [Tests](#tests)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation
 
-none
+install steps here
 
 
 ## Usage
 
-none
+Use the command line and npm install to get the program up and running
 
 ## Contributing
 
@@ -28,15 +31,17 @@ none
 ## Tests
 
 
-a
+none
 
 ## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-test
+
+This project is covered under the MIT license.
 
 ## Questions
 
-username
+Find me on GitHub! My username is kevinatwood. Here is a link to my profile! [Github Profile](https://github.com/kevinatwood)
 
-email
+If you would like to contact me with questiona, email me at [atwoodkevin22@gmail.com](atwoodkevin22@gmail.com)
 

@@ -1,9 +1,30 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const readMetxt = ({ title, description, installation, usage, contributing, tests, license, username, email }) => (
-    `# ${title}
 
+const readMetxt = ({ title, description, installation, usage, contributing, tests, license, username, email }) => {
+    let licenseLink = "";
+    switch (license){
+        case 'Apache':
+            licenseLink = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+            break;
+        case 'GNU':
+            licenseLink = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+            break;
+        case 'MIT':
+            licenseLink = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+            break;
+        case 'Boost Software License 1.0':
+            licenseLink = "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
+            break;
+
+        case 'None':
+            licenseLink = "";
+            break;
+    }
+  return  `# ${title}
+
+${licenseLink}
 ## Description
 
 ${description}
@@ -37,16 +58,18 @@ ${contributing}
 ${tests}
 
 ## License
+${licenseLink}
 
-${license}
+
+This project is covered under the ${license} license.
 
 ## Questions
 
-${username}
+Find me on GitHub! My username is ${username}. Here is a link to my profile! [Github Profile](https://github.com/${username})
 
-${email}
+If you would like to contact me with questions, email me at ${email}.
 
-`)
+`}
 
 inquirer .prompt([
         {
@@ -91,7 +114,7 @@ inquirer .prompt([
             type: "list",
             name: "license",
             message: "Choose a license from the options below",
-            choices: ["test"],
+            choices: ['None', 'Apache', 'GNU', 'MIT', 'Boost Software License 1.0'],
         },        
         {
             type: "input",
